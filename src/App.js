@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Navbar, Card, CardImg } from "reactstrap";
 import { Route, Link } from "react-router-dom";
 import OrderForm from "./Form.js";
+import Final from "./Final.js"
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
       </Route>
       <Route path='/taco'>
         <OrderForm />
+      </Route>
+      <Route path="/final">
+        <Final />
       </Route>
     </>
   );
