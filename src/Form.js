@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
+import {Link} from 'react-router-dom';
 import {
   Card,
   CardImg,
@@ -300,7 +301,9 @@ const OrderForm = () => {
             onChange={handleChange}
           />
         </FormGroup>
+        <Link to="/final">
         <Button>Submit</Button>
+        </Link>
       </Form>
     </>
   );
